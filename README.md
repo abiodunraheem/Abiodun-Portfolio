@@ -7,7 +7,7 @@
 ![screenshot]()
 ![screenshot]()
 ![screenshot]()
-![screenshot](./images/Myworks-DV.jpeg)
+![screenshot]()
 
 It is a show of my understanding of Gitflow, use of Linters, HTML5 semantics, CSS3 flexbox and figma.
 
