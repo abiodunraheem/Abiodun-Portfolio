@@ -4,10 +4,10 @@
 
 > A "portfolio" HTML-5 & CSS3 repository built during the portal learning module.
 
-![screenshot](./images/Landing-MV.jpeg)
-![screenshot](./images/Landing-DV.jpeg)
-![screenshot](./images/Myworks-MV.png)
-![screenshot](./images/Myworks-DV.jpeg)
+![screenshot]()
+![screenshot]()
+![screenshot]()
+![screenshot]()
 
 It is a show of my understanding of Gitflow, use of Linters, HTML5 semantics, CSS3 flexbox and figma.
 
