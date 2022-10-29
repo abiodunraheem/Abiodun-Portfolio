@@ -69,7 +69,7 @@ Live site URL to portfolio
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/abiodunraheem/Abiodun-Portfolio)
+Feel free to check the [issues page](https://github.com/abiodunraheem/Abiodun-Portfolio).
 
 ## Show your support
 
