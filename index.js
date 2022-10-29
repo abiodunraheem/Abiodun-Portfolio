@@ -81,7 +81,7 @@ const projectsList = [
       'Disney-API',
       'Netlify',
     ],
-    liveLink: 'https://github.com/abiodunraheem/Silverbird-Cinemas',
+    liveLink: 'https://abiodunraheem.github.io/Silverbird-Cinemas/',
     sourceLink: 'https://github.com/abiodunraheem/Silverbird-Cinemas',
   },
   {
