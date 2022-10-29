@@ -1079,6 +1079,7 @@ hr {
   .card-header {
     width: 100%;
     font-size: 32px;
+    color: #172b4d;
     line-height: 52px;
     height: 46px;
   }
