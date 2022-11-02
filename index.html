@@ -1,370 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-NY8Z23WW1D"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-NY8Z23WW1D");
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Abiodun Raheem" />
-    <meta
-      name="description"
-      content="This is my personal portfolio site that I will share to all potential employers to showcase my skills as a developer"
-    />
-
-    <!--google Fonts roboto, crete-round, Inter-->
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- font awesome icons -->
-
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Abiodun Portfolio</title>
+</head>
 
-    <!--Page stylesheets-->
-    <link rel="stylesheet" href="stylesheets/landing.css" />
-    <link rel="stylesheet" href="stylesheets/myWorks.css" />
-    <link rel="stylesheet" href="stylesheets/aboutme.css" />
-    <link rel="stylesheet" href="stylesheets/footer.css" />
-    <link rel="stylesheet" href="stylesheets/popup.css" />
-
-    <!--Smooth scroll script-->
-
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="topnavBar">
-        <div class="navleft">
-          <h2><a href="#">Abiodun Raheem</a></h2>
+<body>
+    <header>
+        <div class="nav-bar flex">
+            <div class="topnav">
+                <h2 class="navleft"><a href="#">Abiodun Raheem</a></h2>
+                <div class="topnav-right">
+                    <a id="menu-button" class="item-navigation menu-button" href="#"><i class="fa fa-bars"></i></a>
+                    <ul class="hidden">
+                        <li class="list-style"><a class="item-navigation" href="#about">About</a></li>
+                        <li class="list-style"><a class="item-navigation" href="#home">Works</a></li>
+                        <li class="list-style"><a class="item-navigation" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <a id="closeButton" href=""><i class="fa fa-close close"></i></a>
+                <ul class="closeItem">
+                    <li><a href="#home">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-
-        <div class="navLinks">
-          <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#aboutme">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a href="#"
-                ><i class="fa fa-envelope-o" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-
-        <nav id="navright" class="navright">
-            <a href="#"><img src="images/menu.png" id="menu" alt="Hamburger menu"></a>
-        </nav>
-      </nav>
-
-      <nav class="mobile-menu">
-        <ul>
-          <li class="mobilelist" ><a href="#portfolio">Portfolio</a></li>
-          <li class="mobilelist" ><a href="#aboutme">About</a></li>
-          <li class="mobilelist" ><a href="#contact">Contact</a></li>
-        </ul>
-     </nav>
-     <div id="menubtn">
-</div>
     </header>
-
-    <main class="main">
-      <section class="authordetails">
-        <div class="abbey">
-          <div class="authorheader">
-            <h1>Hey There. I'm Abiodun</h1>
-          </div>
-
-          <div class="authoroccupation">
-            <h2>I'am a Software Developer</h2>
-          </div>
-
-          <div class="authorexplanation">
-            <p>
-              I can help you build a product , feature or website Look through
-              some of my work and experience! If you like what you see and have
-              a project you need coded, don't hestiate to contact me.
-            </p>
-          </div>
+    <main id="home" class="main-container">
+        <div class="main flex">
+            <section class="text-section flex">
+                <div>
+                    <h1 class="main-header flex">Hello! <br/> I’m Abiodun <br/> Glad to see you!</h1> <br/>
+                    <p class="main-text flex">
+                        I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see, and have a project you need code, don’t hesitate to contact me.
+                    </p>
+                </div>
+                <div class="main-items flex">
+                    <p class="contact">LET’S CONNECT</p>
+                    <ul class="icons-list flex list-style">
+                        <li class="icon">
+                            <a href="https://twitter.com/abiodunraheem23" target="”_blank”" rel="noreferrer noopener"><img src="./assets/twitter.svg" alt="Twitter icon" /></a>
+                        </li>
+                        <li class="icon flex ">
+                            <a href="https://www.linkedin.com/in/abiodun-raheem" target="”_blank”" rel="noreferrer noopener"><img src="./assets/linkedin.svg" alt="Linked-In icon" /></a>
+                        </li>
+                        <li class="icon flex">
+                            <a href="https://medium.com/@raheemabiodun23" rel="noreferrer"><img src="./assets/medium.svg" alt="Medium icon" /></a>
+                        </li>
+                        <li class="icon flex">
+                            <a href="https://github.com/Abiodunraheem" target="”_blank”" rel="noreferrer noopener"><img src="./assets/github.svg" alt="Github icon" /></a>
+                        </li>
+                        <li class="icon flex">
+                            <a href="https://angel.co/u/abiodunraheem" rel="noreferrer"><img src="./assets/angellist.svg" alt="Angellist icon" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-
-        <ul class="authorsocials">
-          <li>
-            <a href="https://github.com/abiodunraheem"
-              ><img class="cat" src="images/github.png" alt="github logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/abiodun-raheem"
-              ><img
-                class="linkedin"
-                src="images/linkedin.png"
-                alt="Linkedin logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://angel.co/u/abiodunraheem">
-              <img class="cheers" src="images/cheers.png" alt="cheers logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/abiodunraheem23">
-              <img class="tweet" src="images/tiwitter.png" alt="twitter logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@raheemabiodun23"><img class="m" src="images/M.png" alt="m logo" /></a>
-          </li>
-        </ul>
-
-        <div class="bg">
-          <img
-            src="images/illustration-header-mobile.png"
-            alt="Background image~"
-          />
-        </div>
-      </section>
-
-      <section class="myWorks" id="portfolio">
-        <div class="myWorksHeading">
-          <h2>My Recent Works</h2>
-          <hr>
-        </div>
-
-        <div class="featuredWork">
-          <div class="featuredWorkLeft">
-            <img src="images/featuredWork.png" alt="Featured work image" />
-          </div>
-
-          <div class="featuredWorkRight">
-            <div class="featuredWorkRightHeading">
-              <h3>Multi-Post Stories</h3>
-            </div>
-
-            <div class="featuredWorkRightBody">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <ul>
-                <li class="css">
-                  <ul>
-                    <li>css</li>
-                  </ul>
-                </li>
-                <li class="html">
-                  <ul>
-                    <li>html</li>
-                  </ul>
-                </li>
-                <li class="bootstrap">
-                  <ul>
-                    <li>bootstrap</li>
-                  </ul>
-                </li>
-                <li class="ruby">
-                  <ul>
-                    <li>Ruby</li>
-                  </ul>
-                </li>
-              </ul>
-              <button type="button" id="muiltipostbtn" class="button">See Project</button>
-            </div>
-          </div>
-        </div>
-        <div class="featuredmodal"></div>
-      </section>
-
-      <section class="myProjects">
-
-      </section>
-
-      <section class="whoIsAbiodun" id="aboutme">
-        <div class="Abiodundesc">
-          <div class="abiodundescleft">
-            <div class="abiodunHeader">
-              <h2>About me</h2>
-            </div>
-            <div class="abiodunbody">
-              <p>
-                Hello I'm a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-              </p>
-              <div class="abiodunbtn">
-                <button onclick="location.href='https://drive.google.com/file/d/1rJEarwbIn7VFN86nhy1twvNv76NIvpqp/view?usp=sharing'" type="button">Get My Resume</button>
-              </div>
-            </div>
-          </div>
-          <hr />
-        </div>
-
-        <div class="abiodunskills">
-          <div class="skill">
-            <div class="abiodunskillheader">
-              <ul>
-                <li class="lang"></li>
-                <li class="language">Language</li>
-              </ul>
-            </div>
-            <div class="skilllist">
-              <ul>
-                <li>Javascript</li>
-                <li>Ruby</li>
-                <li>Html</li>
-                <li>Css</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="abiodunskillheader">
-              <ul>
-                <li class="frame"></li>
-                <li class="frameworks">Frameworks</li>
-              </ul>
-            </div>
-            <div class="skilllist">
-              <ul>
-                <li>Bootstrap</li>
-                <li>Ruby on Rails</li>
-                <li>RSPec</li>
-                <li>CapyBara</li>
-                <li>Selenium</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="abiodunskillheader">
-              <ul>
-                <li class="sk"></li>
-                <li class="skills">Skills</li>
-              </ul>
-            </div>
-            <div class="skilllist">
-              <ul>
-                <li>Codekit</li>
-                <li>Github</li>
-                <li>Codepen</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
-    <footer class="footer" id="contact">
-      <div class="footerHeader">
-        <h2>
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h2>
-      </div>
-
-      <div>
-        <div class="footerForm">
-          <form action="https://formspree.io/f/mgedowaj" method="POST" id="form">
-            <input
-              class="ftext"
-              type="text"
-              id="FullName"
-              name="name"
-              placeholder="Full name"
-              maxlength="30"
-              required
-            />
-            <input
-              class="femail"
-              type="email"
-              id="Email"
-              name="_replyto"
-              placeholder="Email address"
-              required
-            />
-            <textarea
-              class="ftextarea"
-              name="message"
-              id="message"
-              maxlength="500"
-              placeholder="Hello! I'm Abiodun glad to see you."
-              required
-            ></textarea
-            ><br />
-            <div class="validatee">
-              <small id="error"></small>
-            <input class="fsubmit" type="submit" value="Get in touch" />
+    <section id="cards-container"></section>
+    <section id="window-container" class="window-container"></section>
+    <section id="about" class="about flex">
+        <div class="about-items-container flex">
+            <div class="about-items flex">
+                <div class="about-continent">
+                    <h2 class="about-header">About Me</h2>
+                    <div class="about-text">
+                        <p>
+                            Hello I’m a full-stack web developer! With love for clean code and accessible design. I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                        </p>
+                        <p class="contact">LET’S CONNECT</p>
+                    </div>
+                    <div>
+                        <ul class="about-icons flex list-style">
+                            <li class="icon">
+                                <a href="https://twitter.com/abiodunraheem23" target="”_blank”" rel="noreferrer noopener"><img src="./assets/twitter.svg" alt="Twitter icon" /></a>
+                            </li>
+                            <li class="icon">
+                                <a href="https://www.linkedin.com/in/abiodun-raheem" target="”_blank”" rel="noreferrer noopener"><img src="./assets/linkedin.svg" alt="Linked-In icon" /></a>
+                            </li>
+                            <li class="icon">
+                                <a href="https://medium.com/@raheemabiodun23" rel="noreferrer"><img src="./assets/medium.svg" alt="Medium icon" /></a>
+                            </li>
+                            <li class="icon">
+                                <a href="https://github.com/Abiodunraheem" target="”_blank”" rel="noreferrer noopener"><img src="./assets/github.svg" alt="Github icon" /></a>
+                            </li>
+                            <li class="icon">
+                                <a href="https://angel.co/u/abiodunraheem" rel="noreferrer"><img src="./assets/angellist.svg" alt="Angellist icon" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-button-container flex">
+                        <button type="button" onclick="location.href='https://drive.google.com/file/d/1KkinPrf9vbVjWgdL1NAhcKmtRofXv1sj/view?usp=sharing'" class="button">Get my resume</button>
+                    </div>
+                </div>
             </div>
-          </form>
+        </div>
+        <div class='box flex'>
+            <div class="box-items flex">
+                <div class="box-header flex">
+                    <h4>Langguages</h4>
+                    <i class="fa fa-angle-down angle box-angle"></i>
+                </div>
+                <div class="langs flex">
+                    <div class="lang-box-items flex">
+                        <div class='lang-box flex'>
+                            <img class="eclipse" src="./assets/Jseclipse.png" alt="JavaScript icon" />
+                            <h5>JavaScript</h5>
+                        </div>
+                        <div class='lang-box flex'>
+                            <img class="eclipse" src="./assets/htmleclipse.png" alt="HTML icon" />
+                            <h5>HTML</h5>
+                        </div>
+                        <div class='lang-box flex'>
+                            <img class="eclipse" src="./assets/csseclipse.png" alt="CSS icon" />
+                            <h5>CSS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="speare-box flex">
+                    <div class="speare flex">
+                        <h4>Frameworks</h4>
+                        <div class="right">
+                            <i class="fa fa-angle-right angle box-angle"></i>
+                        </div>
+                    </div>
+                    <div class="speare flex">
+                        <h4>Skills</h4>
+                        <div class="right">
+                            <i class="fa fa-angle-right angle box-angle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="footerLinks">
-          <ul class="footL">
-            <li>
-              <a href="https://github.com/abiodunraheem"
-                ><i class="git fa fa-github" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/abiodun-raheem"
-                ><i class="fa fa-linkedin" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/abiodunraheem23"
-                ><i class="fa fa-twitter" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/raheemabiodun23/"
-                ><i class="fa fa-instagram" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
+    </section>
+    <section id="contact" class="contact-me flex">
+        <div class="contact-me-container">
+            <div class="contact-me-items flex">
+                <div class="contact-me-heeder flex">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-me-text flex">
+                    <p>
+                        If you have an application you are interested in developing, a feature that you need to build, or a project that needs code. I’d love to help with it.
+                    </p>
+                </div>
+                <div class="contact-me-form flex">
+                    <form class='form flex' action="https://formspree.io/f/xpzbdbeq " method="post">
+                        <input class="form-header" placeholder="Full name" type="text" name="fname" maxlength='30' required/>
+                        <input class="form-email" placeholder="E-mail" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+                        <textarea class="form-text" placeholder="Write your message here" name="message" maxlength="500" required></textarea>
+                        <button class="form-button" type="submit">Get It Touch</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <hr />
-    </footer>
-    <hr class="hr" />
+    <script src="./index.js"></script>
+</body>
 
-    <script src="scripts/modal.js"></script>
-    <script src="scripts/style.js"></script>
-  </body>
 </html>

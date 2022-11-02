@@ -1,28 +1,28 @@
 {
-  "name": "personal-portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nemwel-Boniface/personal-portfolio.git"
+    "url": "git+https://github.com/abiodunraheem/Abiodun-Portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nemwel-Boniface/personal-portfolio/issues"
+    "url": "https://github.com/abiodunraheem/Abiodun-Portfolio/issues"
   },
-  "homepage": "https://github.com/Nemwel-Boniface/personal-portfolio#readme",
+  "homepage": "https://github.com/abiodunraheem/Abiodun-Portfolio#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.4",
-    "hint": "^6.1.9",
+    "hint": "^6.1.10",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
