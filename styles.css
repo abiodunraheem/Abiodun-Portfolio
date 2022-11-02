@@ -215,12 +215,6 @@ header {
   width: 100%;
 }
 
-.topnav {
-  flex-direction: row;
-  width: 100%;
-  margin: 10px 0 0 0;
-}
-
 .topnav a {
   float: left;
   text-decoration: none;
@@ -228,8 +222,8 @@ header {
   color: #344563;
 }
 
-
 .topnav {
+  width: 100%;
   margin: 10px 20px 0 20px;
   display: flex;
   flex-direction: row;
